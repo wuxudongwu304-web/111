@@ -1,0 +1,58 @@
+/* taskflow-simple/style.css */
+* { box-sizing: border-box; }
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", Arial;
+  background: #f3f4f6;
+  margin: 0;
+  padding: 40px;
+  color: #111827;
+}
+.app {
+  max-width: 520px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(16,24,40,0.08);
+}
+h1 { margin: 0 0 12px 0; font-size: 20px; }
+.input-row { display:flex; gap:8px; margin-bottom:12px; }
+#task-input {
+  flex:1;
+  padding:8px 10px;
+  border:1px solid #e5e7eb;
+  border-radius:6px;
+  font-size:14px;
+}
+#add-btn {
+  padding:8px 12px;
+  background:#2563eb;
+  color:#fff;
+  border:0;
+  border-radius:6px;
+  cursor:pointer;
+}
+#task-list { list-style:none; padding:0; margin:0; }
+#task-list li {
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding:8px 10px;
+  border-radius:6px;
+  border:1px solid #f1f5f9;
+  margin-bottom:8px;
+  background: #fff;
+}
+.task-left { display:flex; align-items:center; gap:10px; }
+.task-left input[type="checkbox"] { width:18px; height:18px; }
+.task-text { font-size:14px; }
+.task-text.completed { text-decoration:line-through; color:#9ca3af; }
+.btns button {
+  background:transparent;
+  border:0;
+  color:#ef4444;
+  cursor:pointer;
+  font-size:14px;
+  padding:6px;
+}
+.empty { color:#6b7280; font-size:13px; text-align:center; padding:18px 0; }
